@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Registro de viajero</h3>
+
+<form action="contactos.php" method="post">
+
+    <label>Nombre:</label>
+    <input type="text" name="nombre" required>
+
+    <label>Apellido:</label>
+    <input type="text" name="apellido" required>
+
+    <label>Edad:</label>
+    <input type="number" name="edad" min="10" max="100">
+
+    <label>Correo:</label>
+    <input type="email" name="correo" required>
+
+    <label>Teléfono:</label>
+    <input type="tel" name="telefono">
+
+    <label>Usuario:</label>
+    <input type="text" name="usuario" required>
+
+    <label>Contraseña:</label>
+    <input type="password" name="password" required>
+
+    <label>Destino favorito:</label>
+    <select name="destino">
+        <option>Colombia</option>
+        <option>Machu Picchu</option>
+        <option>París</option>
+        <option>Brasil</option>
+    </select>
+
+    <label>Tipo de viaje:</label>
+    <div class="opciones">
+        <input type="radio" name="tipo"> Aventura
+        <input type="radio" name="tipo"> Relax
+        <input type="radio" name="tipo"> Cultural
+    </div>
+
+    <label>Preferencias:</label>
+    <div class="opciones">
+        <input type="checkbox"> Playa
+        <input type="checkbox"> Montaña
+        <input type="checkbox"> Gastronomía
+    </div>
+
+    <label>Comentarios:</label>
+    <textarea name="comentarios"></textarea>
+
+    <button type="submit">Registrarse</button>
+
+</form>
+    
+    
+</body>
+</html>
